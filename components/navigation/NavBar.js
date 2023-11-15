@@ -1,6 +1,6 @@
 import styles from './Nav.module.css';
 import Image from 'next/image';
-import logoImg from '../../assets/nav_logo.png'
+
 
 
 export default function NavBar() {
@@ -9,8 +9,10 @@ export default function NavBar() {
             <main className={styles.main}>
                 <div className={styles.logoImg}>
                     <Image
-                        src={logoImg}
-                        alt="Innersight Logo" />
+                        src= '/nav_logo.png'
+                        alt="Innersight Logo"
+                        width={380}
+                        height={85} />
                 </div>
 
             </main>

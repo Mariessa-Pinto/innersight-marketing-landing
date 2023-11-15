@@ -6,12 +6,19 @@
   background: var(--lightLavendar)
 }
 
+/*Body padding for all except purple section*/
 .introSection {
+  padding: 0 8em;
+  box-sizing: border-box;
+}
 
+
+.introSection {
   height: auto;
   width: 100%;
   display: flex;
   flex-direction: row;
+  padding-bottom: 5em;
 }
 
 .introContent {
@@ -51,4 +58,29 @@
   justify-content: center;
   align-items: center;
 
+}
+
+.benefitsSection {
+  width: 100%;
+  position: relative;
+
+}
+
+.wavyBkg {
+width: 100%;
+}
+
+.benefitsContent{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding: 0 8em;
+  box-sizing: border-box;
+}
+
+.benefitBlobContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

@@ -6,15 +6,14 @@ import { useState } from 'react';
 import NavBar from '@/components/navigation/NavBar';
 import Form from '@/components/form/Form';
 
-import introImage from '../assets/introImage_v2.png';
-import formBlob from '../assets/formBlob.png';
-
 import { text } from '@/data/textData';
+import BenefitBlob from '@/components/benefits/BenefitBlob';
 
 
 export default function Home() {
 
   const [data, setData] = useState(...text.content)
+  const [benefitData, setBenefitData] = useState(text)
 
   console.log(data)
 
@@ -36,13 +35,45 @@ export default function Home() {
               <p>{data.introDesc}</p>
             </div>
             <div className={styles.introSignup}>
-              <Image src={formBlob} />
+              <Image src='/formBlob.png' width={625}
+                height={500} />
               <Form />
             </div>
           </div>
           <div className={styles.introImage}>
-            <Image src={introImage} />
+            <Image src='/introImage_v2.png' width={660}
+              height={750} />
           </div>
+        </div>
+
+        <div className={styles.benefitsSection}>
+          <Image src='/wavyBackground_v2.png' width={1440}
+            height={913} className={styles.wavyBkg} />
+          <div className={styles.benefitsContent}>
+            <h2>Experience <i>innersight</i></h2>
+            <div className={styles.benefitBlobContainer}>
+
+              {
+                benefitData && benefitData.benefits.map((i, index) => {
+                  return (
+                    <>
+                      <BenefitBlob
+                        key={index}
+                        header={i.title}
+                        imgSrc={i.imgSrc}
+                        description={i.description} />
+                    </>
+                  )
+                })
+              }
+
+
+            </div>
+
+
+          </div>
+
+
         </div>
 
       </main>

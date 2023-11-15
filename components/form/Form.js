@@ -7,7 +7,7 @@ export default function Form() {
     return (
         <>
             <main className={styles.main}>
-                <h2>Start your journey today.</h2>
+                <h3>Start your journey today.</h3>
                 <form className={styles.ctaForm}>
                     <div className={styles.nameInput}>
                         <label>Name</label>
