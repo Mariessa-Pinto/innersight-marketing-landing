@@ -84,3 +84,57 @@ width: 100%;
   flex-direction: row;
   justify-content: space-between;
 }
+
+.benefitCta2{
+  width: 33%;
+  margin-top: 3em;
+}
+
+.testimonialSection{
+  background: pink;
+  width: 100%;
+  padding: 0 8em;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding-bottom: 8em;
+}
+
+.testimonialContent{
+  background: lightblue;
+  width: 50%;
+}
+
+.testimonialContent > h3,
+.testimonialContent > h2 {
+  text-align: right;
+}
+
+.testimonialImg{
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: -8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 7em;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.testScrollContainer{
+  height: 20em;
+  width: 100%;
+  background: var(--white);
+  border-radius: 3.5em;
+}
+
+.scroll{
+  height: 100%;
+  width: 100%;
+  padding: 2.5em;
+  box-sizing: border-box;
+}
