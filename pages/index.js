@@ -1,9 +1,22 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '@/styles/Home.module.css'
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '@/styles/Home.module.css';
+import { useState } from 'react';
+
+import NavBar from '@/components/navigation/NavBar';
+import Form from '@/components/form/Form';
+
+import { text } from '@/data/textData';
+import BenefitBlob from '@/components/benefits/BenefitBlob';
 
 
 export default function Home() {
+
+  const [data, setData] = useState(...text.content)
+  const [benefitData, setBenefitData] = useState(text)
+
+  console.log(data)
+
   return (
     <>
       <Head>
@@ -12,7 +25,56 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <main className={styles.main}>
+        <NavBar />
+        <div className={styles.introSection}>
+          <div className={styles.introContent}>
+            <div className={styles.introText}>
+              <h1>{data.introH1}</h1>
+              <p>{data.introDesc}</p>
+            </div>
+            <div className={styles.introSignup}>
+              <Image src='/formBlob.png' width={625}
+                height={500} />
+              <Form />
+            </div>
+          </div>
+          <div className={styles.introImage}>
+            <Image src='/introImage_v2.png' width={660}
+              height={750} />
+          </div>
+        </div>
+
+        <div className={styles.benefitsSection}>
+          <Image src='/wavyBackground_v2.png' width={1440}
+            height={913} className={styles.wavyBkg} />
+          <div className={styles.benefitsContent}>
+            <h2>Experience <i>innersight</i></h2>
+            <div className={styles.benefitBlobContainer}>
+
+              {
+                benefitData && benefitData.benefits.map((i, index) => {
+                  return (
+                    <>
+                      <BenefitBlob
+                        key={index}
+                        header={i.title}
+                        imgSrc={i.imgSrc}
+                        description={i.description} />
+                    </>
+                  )
+                })
+              }
+
+
+            </div>
+
+
+          </div>
+
+
+        </div>
 
       </main>
     </>

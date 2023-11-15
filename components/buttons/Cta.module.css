@@ -1,0 +1,18 @@
+.main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.btn{
+    width: 17.5em;
+    height: 2.75em;
+    background-color: var(--darkPurple);
+    border: 0;
+    border-radius: 0.625em;
+    padding: 0.8125em;
+    color: var(--white)
+
+}

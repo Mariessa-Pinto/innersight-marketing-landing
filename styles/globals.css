@@ -1,3 +1,73 @@
-:root{
-  
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+:root {
+
+    /*Colours*/
+    --lightLavendar: #F2F2FD;
+    --darkPurple: #6164C3;
+    --white: #FDFDFD;
+    --darkGrey: #88898C;
+
+    /*Fonts*/
+
+
+}
+
+html {
+    background-color: var(--lightLavendar);
+}
+
+body {
+    margin: 0;
+    background: var(--lightLavendar);
+    font-family: 'Lexend', sans-serif;
+    white-space: pre-wrap;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 1.875em;
+}
+
+h3 {
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+input[type=text] {
+    background: var(--white);
+    border: 1pt solid var(--darkGrey);
+    width: 22.625em;
+    height: 2.5625em; 
+    border-radius: 0.625em;
+}
+
+input[type=checkbox] {
+    background: var(--white);
+    border: 1pt solid var(--darkGrey);
+    width: 1.25em;
+    height: 1.25em; 
+    border-radius: 0.3125em;
+}
+
+.agreeLabel{
+    font-size: 0.9375em;
+    font-weight: 300;
+}
+
+button {
+    font-family: inherit;
+    font-size: 0.875em;
+
 }
