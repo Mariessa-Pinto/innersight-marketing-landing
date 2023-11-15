@@ -3,7 +3,8 @@ export const text = {
         {
             introH1: "Anxiety Journaling Made Easy: \nWrite Your Thoughts, Let AI Handle the Rest",
             introDesc: "Do you struggle with General Anxiety Disorder or know someone who does? Innersight is here to empower you on your journey to managing your anxiety. We designed a digital journaling app that goes beyond traditional journaling techniques. Innersight is your daily companion to untangling your web of thoughts.",
-            cta2: "Ready to embark on your journey to inner peace? Sign up now to be the first to know when InnerSight is available.",
+            cta2: "Ready to embark on your journey to inner peace?\nSign up now to be the first to know when InnerSight is available.",
+            cta3: "Don't let anxiety control your life.\nUnclutter your thoughts with InnerSight.\nSign up now to be notified when our app is released.",
         }
     ],
     benefits: [
@@ -13,7 +14,7 @@ export const text = {
             imgSrc: '/benefitImg1.png'
         },
         {
-            title: "Discover the Benefit of AI Insights",
+            title: "Discover the Benefit\nof AI Insights",
             description: "We've harnessed the power of AI to analyze your journal entries on a weekly, monthly, and yearly basis. InnerSight identifies hidden correlations, revealing how your daily routines and experiences impact your emotional state.",
             imgSrc: "/benefitImg2.png"
         },

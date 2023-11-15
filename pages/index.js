@@ -5,6 +5,7 @@ import { useState } from 'react';
 
 import NavBar from '@/components/navigation/NavBar';
 import Form from '@/components/form/Form';
+import CTABtn from '@/components/buttons/CTABtn';
 
 import { text } from '@/data/textData';
 import BenefitBlob from '@/components/benefits/BenefitBlob';
@@ -63,16 +64,38 @@ export default function Home() {
                         imgSrc={i.imgSrc}
                         description={i.description} />
                     </>
+
                   )
                 })
               }
 
+            </div>
+            <div className={styles.benefitCta2}>
+              <h3>{data.cta2}</h3>
+              <CTABtn />
 
             </div>
 
-
           </div>
 
+
+        </div>
+        <div className={styles.testimonialSection}>
+          <div className={styles.testimonialContent}>
+            <h3>Testimonials</h3>
+            <h2>What Early Users Are Saying</h2>
+            <div className={styles.testScrollContainer}>
+              <div className={styles.scroll}>
+                <p>This is where the scrolling testimonals go</p>
+              </div>
+
+
+            </div>
+          </div>
+          <div className={styles.testimonialImg}>
+            <Image src='/slothPhone.png' width={400} height={508} objectFit='contain' />
+            <h3>{data.cta3}</h3>
+          </div>
 
         </div>
 
