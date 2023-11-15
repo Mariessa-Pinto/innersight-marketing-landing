@@ -1,9 +1,23 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '@/styles/Home.module.css'
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '@/styles/Home.module.css';
+import { useState } from 'react';
+
+import NavBar from '@/components/navigation/NavBar';
+import Form from '@/components/form/Form';
+
+import introImage from '../assets/introImage_v2.png';
+import formBlob from '../assets/formBlob.png';
+
+import { text } from '@/data/textData';
 
 
 export default function Home() {
+
+  const [data, setData] = useState(...text.content)
+
+  console.log(data)
+
   return (
     <>
       <Head>
@@ -12,7 +26,24 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <main className={styles.main}>
+        <NavBar />
+        <div className={styles.introSection}>
+          <div className={styles.introContent}>
+            <div className={styles.introText}>
+              <h1>{data.introH1}</h1>
+              <p>{data.introDesc}</p>
+            </div>
+            <div className={styles.introSignup}>
+              <Image src={formBlob} />
+              <Form />
+            </div>
+          </div>
+          <div className={styles.introImage}>
+            <Image src={introImage} />
+          </div>
+        </div>
 
       </main>
     </>
