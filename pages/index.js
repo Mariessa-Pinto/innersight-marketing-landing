@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from '@/styles/Home.module.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import NavBar from '@/components/navigation/NavBar';
 import Form from '@/components/form/Form';
@@ -9,14 +10,14 @@ import CTABtn from '@/components/buttons/CTABtn';
 
 import { text } from '@/data/textData';
 import BenefitBlob from '@/components/benefits/BenefitBlob';
+import Testimonials from '@/components/testimonials/Testimonials';
+import Footer from '@/components/navigation/Footer';
 
 
 export default function Home() {
 
   const [data, setData] = useState(...text.content)
   const [benefitData, setBenefitData] = useState(text)
-
-  console.log(data)
 
   return (
     <>
@@ -35,7 +36,7 @@ export default function Home() {
               <h1>{data.introH1}</h1>
               <p>{data.introDesc}</p>
             </div>
-            <div className={styles.introSignup}>
+            <div className={styles.introSignup} id='form'>
               <Image src='/formBlob.png' width={625}
                 height={500} />
               <Form />
@@ -72,7 +73,9 @@ export default function Home() {
             </div>
             <div className={styles.benefitCta2}>
               <h3>{data.cta2}</h3>
-              <CTABtn />
+              <Link href='#form'>
+                <CTABtn />
+                </Link>
 
             </div>
 
@@ -86,18 +89,39 @@ export default function Home() {
             <h2>What Early Users Are Saying</h2>
             <div className={styles.testScrollContainer}>
               <div className={styles.scroll}>
-                <p>This is where the scrolling testimonals go</p>
-              </div>
+                {
+                  benefitData && benefitData.testimonials.map((t, indexT) => {
+                    return (
+                      <>
+                        <Testimonials
+                          key={indexT}
+                          description={t.description}
+                          name={t.name} />
+                        {
+                          indexT <= 3 ?
+                            <Image src='/divider.png' width={557} height={2} className={styles.divider} />
+                            :
+                            null
+                        }
 
+                      </>
+                    )
+                  })
+                }
+
+              </div>
 
             </div>
           </div>
           <div className={styles.testimonialImg}>
-            <Image src='/slothPhone.png' width={400} height={508} objectFit='contain' />
-            <h3>{data.cta3}</h3>
+            <Image src='/slothPhone.png' width={400} height={508} />
+            <h3>Don't let anxiety control your life. <br />
+              Unclutter your thoughts with <span style={{ fontStyle: "italic" }}>innersight</span>. <br />
+              Sign up now to be notified when our app is released.</h3>
           </div>
 
         </div>
+        <Footer/>
 
       </main>
     </>
