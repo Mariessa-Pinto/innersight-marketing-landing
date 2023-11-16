@@ -1,0 +1,13 @@
+
+.nameContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+
+}
+
+.main h3,
+.main p{
+    margin: 0.25em 0;
+}

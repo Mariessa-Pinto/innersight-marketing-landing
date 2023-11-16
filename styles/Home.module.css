@@ -41,7 +41,6 @@
 }
 
 .introSignup {
-
   width: 100%;
   flex: 1;
   display: flex;
@@ -88,10 +87,10 @@ width: 100%;
 .benefitCta2{
   width: 33%;
   margin-top: 3em;
+
 }
 
 .testimonialSection{
-  background: pink;
   width: 100%;
   padding: 0 8em;
   box-sizing: border-box;
@@ -102,7 +101,6 @@ width: 100%;
 }
 
 .testimonialContent{
-  background: lightblue;
   width: 50%;
 }
 
@@ -130,11 +128,18 @@ width: 100%;
   width: 100%;
   background: var(--white);
   border-radius: 3.5em;
+  padding: 2.5em;
+  box-sizing: border-box;
 }
 
 .scroll{
   height: 100%;
   width: 100%;
-  padding: 2.5em;
-  box-sizing: border-box;
+  overflow-y: scroll;
+
+}
+
+
+.divider{
+  margin: 1.5em 0;
 }

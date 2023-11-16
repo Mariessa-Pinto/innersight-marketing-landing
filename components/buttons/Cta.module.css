@@ -12,7 +12,11 @@
     background-color: var(--darkPurple);
     border: 0;
     border-radius: 0.625em;
-    padding: 0.8125em;
-    color: var(--white)
+    color: var(--white);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }

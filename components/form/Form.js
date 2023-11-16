@@ -4,6 +4,7 @@ import styles from './Form.module.css';
 
 
 export default function Form() {
+
     return (
         <>
             <main className={styles.main}>
@@ -21,8 +22,12 @@ export default function Form() {
                         <input type="checkbox" name="agree" />
                         <label className={styles.agreeLabel}>I agree to recieve emails from <i>innersight</i></label>
                     </div>
-                    
-                    <CTABtn/>
+
+                    <div onClick={() => alert("You're signed up to receive innersight emails. \nCheck your email inbox to get started!")}>
+                        <CTABtn />
+                    </div>
+
+
 
                 </form>
 
