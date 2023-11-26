@@ -38,7 +38,8 @@ export default function Home() {
             </div>
             <div className={styles.introSignup} id='form'>
               <Image src='/formBlob.png' width={625}
-                height={500} />
+                height={500}
+                className={styles.formBlob} />
               <Form />
             </div>
           </div>
@@ -80,8 +81,6 @@ export default function Home() {
             </div>
 
           </div>
-
-
         </div>
         <div className={styles.testimonialSection}>
           <div className={styles.testimonialContent}>
@@ -114,7 +113,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.testimonialImg}>
-            <Image src='/slothPhone.png' width={400} height={508} />
+            <Image src='/slothPhone.png' width={400} height={508} className={styles.slothPhone} />
             <h3>Don't let anxiety control your life. <br />
               Unclutter your thoughts with <span style={{ fontStyle: "italic" }}>innersight</span>. <br />
               Sign up now to be notified when our app is released.</h3>

@@ -12,7 +12,8 @@ export default function NavBar() {
                         src= '/nav_logo.png'
                         alt="Innersight Logo"
                         width={380}
-                        height={85} />
+                        height={85}
+                        className={styles.logo} />
                 </div>
 
             </main>
