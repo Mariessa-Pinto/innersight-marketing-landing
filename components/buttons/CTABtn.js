@@ -7,6 +7,5 @@ export default function CTABtn() {
                 <p>Get Notified</p>
             </div>
         </main>
-
     )
 }

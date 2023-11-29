@@ -3,16 +3,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from '@/styles/Home.module.css';
 import { useState, useEffect } from 'react';
-
 import NavBar from '@/components/navigation/NavBar';
 import Form from '@/components/form/Form';
 import CTABtn from '@/components/buttons/CTABtn';
-
 import { text } from '@/data/textData';
 import BenefitBlob from '@/components/benefits/BenefitBlob';
 import Testimonials from '@/components/testimonials/Testimonials';
 import Footer from '@/components/navigation/Footer';
-
 
 export default function Home() {
 
@@ -27,7 +24,6 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <main className={styles.main}>
         <NavBar />
         <div className={styles.introSection}>
@@ -48,14 +44,12 @@ export default function Home() {
               height={750} />
           </div>
         </div>
-
         <div className={styles.benefitsSection}>
           <Image src='/wavyBackground_v2.png' width={1440}
             height={913} className={styles.wavyBkg} />
           <div className={styles.benefitsContent}>
             <h2>Experience <i>innersight</i></h2>
             <div className={styles.benefitBlobContainer}>
-
               {
                 benefitData && benefitData.benefits.map((i, index) => {
                   return (
@@ -66,20 +60,16 @@ export default function Home() {
                         imgSrc={i.imgSrc}
                         description={i.description} />
                     </>
-
                   )
                 })
               }
-
             </div>
             <div className={styles.benefitCta2}>
               <h3>{data.cta2}</h3>
               <Link href='#form'>
                 <CTABtn />
-                </Link>
-
+              </Link>
             </div>
-
           </div>
         </div>
         <div className={styles.testimonialSection}>
@@ -102,14 +92,11 @@ export default function Home() {
                             :
                             null
                         }
-
                       </>
                     )
                   })
                 }
-
               </div>
-
             </div>
           </div>
           <div className={styles.testimonialImg}>
@@ -118,10 +105,8 @@ export default function Home() {
               Unclutter your thoughts with <span style={{ fontStyle: "italic" }}>innersight</span>. <br />
               Sign up now to be notified when our app is released.</h3>
           </div>
-
         </div>
-        <Footer/>
-
+        <Footer />
       </main>
     </>
   )

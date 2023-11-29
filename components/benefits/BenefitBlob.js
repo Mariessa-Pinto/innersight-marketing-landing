@@ -1,8 +1,6 @@
 import styles from './Benefit.module.css'
 import Image from 'next/image';
 
-
-
 export default function BenefitBlob({
     header,
     imgSrc,
@@ -22,15 +20,12 @@ export default function BenefitBlob({
                             width={383}
                             height={553} />
                 }
-
                 <div className={styles.content}>
                     <h3>{header}</h3>
                     <Image src={imgSrc} alt="image" className={styles.benefitImg} width={150} height={150} />
                     <p>{description}</p>
-
                 </div>
             </main>
         </>
-
     )
 }

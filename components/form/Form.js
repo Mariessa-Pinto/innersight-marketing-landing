@@ -1,8 +1,6 @@
 import CTABtn from '../buttons/CTABtn';
 import styles from './Form.module.css';
 
-
-
 export default function Form() {
 
     return (
@@ -22,17 +20,11 @@ export default function Form() {
                         <input type="checkbox" name="agree" />
                         <label className={styles.agreeLabel}>I agree to recieve emails from <i>innersight</i></label>
                     </div>
-
                     <div onClick={() => alert("You're signed up to receive innersight emails. \nCheck your email inbox to get started!")}>
                         <CTABtn />
                     </div>
-
-
-
                 </form>
-
             </main>
         </>
-
     )
 }
