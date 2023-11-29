@@ -33,33 +33,26 @@
 
 /*Tablet*/
 @media only screen and (max-width: 810px) {
-
     .main{
         flex-direction: column;
         padding: 0;
         height: auto;
     }
-
     .links{
         gap: 1em;
     }
-  
-  }
+}
 
-  /*Mobile*/
+/*Mobile*/
 @media only screen and (max-width: 414px) {
-
-.logo{
-    flex-direction: column;
-    padding: 5%;
+    .logo{
+        flex-direction: column;
+        padding: 5%;
+    }
+    .links{
+        flex-direction: column;
+    }
+    .links > h3{
+        margin-top: 0;
+    }
 }
-
-.links{
-    flex-direction: column;
-}
-
-.links > h3{
-    margin-top: 0;
-}
-  
-  }

@@ -1,16 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
 
 :root {
-
     /*Colours*/
     --lightLavendar: #F2F2FD;
     --darkPurple: #6164C3;
     --white: #FDFDFD;
     --darkGrey: #88898C;
-
-    /*Fonts*/
-
-
 }
 
 html {
@@ -74,7 +69,6 @@ input[type=checkbox] {
 }
 
 /*Scrollbar*/
-
 html {
     --scroll-behavior: smooth!important;
     scroll-behavior: smooth!important;
@@ -101,24 +95,18 @@ html {
     border-radius: 2em;
 }
 
-  /*Mobile*/
-  @media only screen and (max-width: 414px) {
-
+/*Mobile*/
+@media only screen and (max-width: 414px) {
     h1 {
         font-size: 1.75em;
     }
-    
     h2 {
         font-size: 1.5em;
     }
-    
     h3 {
         font-size: 1.25em
     }
-    
-    
     p {
         font-size: 1em;
     }
-      
-      }
+}

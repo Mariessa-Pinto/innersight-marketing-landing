@@ -11,8 +11,6 @@
   padding: 0 8em;
   box-sizing: border-box;
 }
-
-
 .introSection {
   height: auto;
   width: 100%;
@@ -20,16 +18,13 @@
   flex-direction: row;
   padding-bottom: 5em;
 }
-
 .introContent {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
-
 .introText {
   width: 100%;
   height: 50%;
@@ -37,9 +32,7 @@
   flex-direction: column;
   justify-content: center;
   padding-top: 2em;
-
 }
-
 .introSignup {
   width: 100%;
   flex: 1;
@@ -48,29 +41,22 @@
   justify-content: center;
   align-items: center;
   position: relative;
-
 }
-
 .introImage {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-
 .benefitsSection {
   width: 100%;
   height: auto;
   position: relative;
-
 }
-
 .wavyBkg {
 width: 100%;
 position: absolute;
 }
-
 .benefitsContent{
   width: 100%;
   height: auto;
@@ -78,7 +64,6 @@ position: absolute;
   box-sizing: border-box;
   position: relative;
 }
-
 .benefitBlobContainer{
   width: 100%;
   height: auto;
@@ -86,13 +71,10 @@ position: absolute;
   flex-direction: row;
   justify-content: space-between;
 }
-
 .benefitCta2{
   width: 33%;
   margin-top: 3em;
-
 }
-
 .testimonialSection{
   width: 100%;
   height: auto;
@@ -101,18 +83,14 @@ position: absolute;
   display: flex;
   flex-direction: row;
   position: relative;
-
 }
-
 .testimonialContent{
   width: 50%;
 }
-
 .testimonialContent > h3,
 .testimonialContent > h2 {
   text-align: right;
 }
-
 .testimonialImg{
   width: 50%;
   display: flex;
@@ -123,7 +101,6 @@ position: absolute;
   box-sizing: border-box;
   text-align: center;
 }
-
 .testScrollContainer{
   height: 20em;
   width: 100%;
@@ -132,15 +109,11 @@ position: absolute;
   padding: 2.5em;
   box-sizing: border-box;
 }
-
 .scroll{
   height: 100%;
   width: 100%;
   overflow-y: scroll;
-
 }
-
-
 .divider{
   margin: 1.5em 0;
 }
@@ -150,77 +123,60 @@ position: absolute;
   .introSection{
     flex-direction: column;
   }
-
-.introContent{
-  width: 100%;
-}
-
-.introImage{
-  width: 100%;
-}
-
-.benefitBlobContainer{
-flex-direction: column;
-align-items: center;
-}
-
-
-.testimonialSection{
-  flex-direction: column;
-}
-
-.testimonialContent{
-  width: 100%;
-}
-
-.testimonialImg{
-  position: initial;
-  flex-direction: row;
-  width: 100%;
-  padding: 0;
-}
-
-.benefitCta2{
-  width: 100%;
-}
-
-.slothPhone{
-  width: 300px;
-  height: 354px;
-}
-
-
+  .introContent{
+    width: 100%;
+  }
+  .introImage{
+    width: 100%;
+  }
+  .benefitBlobContainer{
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonialSection{
+    flex-direction: column;
+  }
+  .testimonialContent{
+    width: 100%;
+  }
+  .testimonialImg{
+    position: initial;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+  }
+  .benefitCta2{
+    width: 100%;
+  }
+  .slothPhone{
+    width: 300px;
+    height: 354px;
+  }
 }
 
   /*Mobile*/
-  @media only screen and (max-width: 414px) {
-    .introSection,
-    .benefitsContent,
-    .testimonialSection {
-      padding: 0em 4em;
-    }
-
-    .introImage{
-      display: none;
-    }
-
-    .testimonialImg{
-      flex-direction: column;
-    }
-
-    .formBlob{
-      width: 400px;
-      height: 400px;
-      object-fit: contain;
-    }
-
-    .wavyBkg{
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .testimonialSection{
-      margin-top: 3em;
-    }
-      
-      }
+@media only screen and (max-width: 414px) {
+  .introSection,
+  .benefitsContent,
+  .testimonialSection {
+    padding: 0em 4em;
+  }
+  .introImage{
+    display: none;
+  }
+  .testimonialImg{
+    flex-direction: column;
+  }
+  .formBlob{
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+  }
+  .wavyBkg{
+    height: 100%;
+    object-fit: cover;
+  }
+  .testimonialSection{
+    margin-top: 3em;
+  }
+}

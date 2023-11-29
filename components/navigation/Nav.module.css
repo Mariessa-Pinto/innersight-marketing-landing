@@ -5,9 +5,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
-
 .logoImg {
     width: auto;
     height: 100%;
@@ -16,15 +14,13 @@
     padding-left: 8em;
 }
 
-  /*Mobile*/
-  @media only screen and (max-width: 414px) {
-.logo{
-    width: 190px;
-    height: 43px;
+/*Mobile*/
+@media only screen and (max-width: 414px) {
+    .logo{
+        width: 190px;
+        height: 43px;
+    }
+    .logoImg{
+        padding-left: 4em;
+    }
 }
-
-.logoImg{
-    padding-left: 4em;
-}
-      
-      }

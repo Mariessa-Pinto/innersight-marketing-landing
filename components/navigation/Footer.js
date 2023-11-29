@@ -1,8 +1,6 @@
 import styles from './Footer.module.css';
 import Image from 'next/image';
 
-
-
 export default function Footer() {
     return (
         <>
@@ -21,10 +19,8 @@ export default function Footer() {
                     <h3>Privacy Policy</h3>
                     <h3>User Agreement</h3>
                 </div>
-
             </main>
         </>
-
     )
 }
 
